@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game World</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(image/contant\ us.jpg);
+            height: 100vh;
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+        }
+        .header{
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .header a{
+            color: white;
+            font-size: 20px;
+            float: left;
+            margin-left: 14%;
+            padding: 10px;
+            text-decoration: none;
+            transform: scale(1);
+            transition: 0.3s ease-in-out;
+        }
+        .header a:hover{
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            transform: scale(0.9);
+        }
+        .container{
+            background-color: white;
+            width: 83.333333333%;
+            height: 630px;
+            margin: auto;
+            overflow: auto;
+            margin-top: 70px;
+            border-radius: 10px;
+        }
+        .container div{
+            margin: 2%;
+            width: 45%;
+            float: left;
+        }
+        .container h1,h2,h3{
+            text-align: center;
+        }
+        .contact{
+            background-color: rgb(23, 200, 231);
+            border-radius: 50px;
+        }
+        .contact:hover{
+            cursor: pointer;
+        }
+        #fname{
+            font-size: 17px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            width: 48%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            margin-right: 3%;
+            display: inline-block;
+            border: 5px;
+            box-sizing: border-box;
+            border-bottom: 2px solid black;
+        }
+        #lname{
+            font-size: 17px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            width: 48%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 5px;
+            border-bottom: 2px solid black;
+        }
+        #email{
+            font-size: 17px;
+            background-color:whitesmoke;
+            border-radius: 10px;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 5px;
+            box-sizing: border-box;
+            border-bottom: 2px solid black;
+        }
+        #message{
+            background-color: whitesmoke;
+            border-radius: 10px;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 5px;
+            border-bottom: 2px solid black;
+            box-sizing: border-box;
+            height: 100px;
+        }
+        #rate{
+            font-size: 15px;
+            width: 40%;
+            padding: 10px 15px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px;
+        }
+        #submit{
+            font-size: 15px;
+            width: 60%;
+            background-color: #4caf50;
+            color: white;
+            padding: 14px 20px;
+            margin-top: 2%;
+            margin-left: 20%;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        #submit:hover{
+            background-color: #45a049;
+        }
+        .footer{
+            color: white;
+        }
+        @media screen and (max-width: 700px) {
+            .container div{
+                width: 90%;
+            }
+            .container{
+                width: auto;
+                height: 900px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CONTACT US ABOUT GAME WORLD</h1>
+        <a href="index.html">Home</a>
+        <a href="best_game.html">Best Games</a>
+        <a href="popular_game.html">Popular Games</a>
+        <a href="contact_us.html">Contact Us</a>
+    </div>
+    <div class="container">
+            <h1>Fill the form.</h1>
+            <h1>It's easy.</h1>
+        <div>
+            <input type="text" id="fname" name="firstname" placeholder="First name">
+
+            <input type="text" name="lname" id="lname" placeholder="Last Name">
+
+            <input type="text" id="email" name="email" placeholder="Email">
+
+            <input type="text" name="Message" id="message" placeholder="Message">
+
+            <select name="rate" id="rate">
+                <option value="Very Good">Very Good</option>
+                <option value="Good">Good</option>
+                <option value="Nomal">Normal</option>
+                <option value="Bad">Bad</option>
+                <option value="Very Bad">Very Bad</option>
+            </select>
+
+            <input type="submit" id="submit" value="Send Message">
+        </div>
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <h3>Address: Main Road, Intakaw, Bago</h3>
+            <h3>Ph no: +959-777-117-139</h3>
+            <h3>Email: yairhtet248.yha@gmail.com</h3>
+            <h3>Website: gameworld.com</h3>
+        </div>
+    </div>
+    <div class="footer">
+        <h3><marquee><sup>@</sup>Design By Zen</marquee></h3>
+    </div>
+</body>
+</html>
